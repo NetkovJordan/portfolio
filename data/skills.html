@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills - Jordan Netkov</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Video background -->
+  <div id="background" aria-hidden="true">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Hamburger menu toggle -->
+  <div id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0" aria-expanded="false" aria-controls="sidebarNav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Sidebar navigation -->
+  <nav class="navbar" id="sidebarNav" aria-label="Primary navigation" hidden>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="education.html" class="nav-link">Education</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header role="banner" class="text-center my-4">
+    <h1>Core Protocols</h1>
+    <p>Skills & Toolsets</p>
+  </header>
+
+<main class="container">
+  <section id="skills">
+    <div class="skill-bubbles">
+      <span class="skill-badge" style="background: var(--badge-bg-devops)">Docker</span>
+      <span class="skill-badge" style="background: var(--badge-bg-devops)">Kubernetes</span>
+      <span class="skill-badge" style="background: var(--badge-bg-devops)">Terraform</span>
+      <span class="skill-badge" style="background: var(--badge-bg-mlops)">Machine Learning</span>
+      <span class="skill-badge" style="background: var(--badge-bg-mlops)">W&B</span>
+      <span class="skill-badge" style="background: var(--badge-bg-mlops)">Sagemaker</span>
+      <span class="skill-badge">Linux</span>
+      <span class="skill-badge">CI/CD</span>
+      <span class="skill-badge">ArgoCD</span>
+      <span class="skill-badge">AWS</span>
+      <span class="skill-badge">Azure</span>
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">Java</span>
+      <span class="skill-badge">Grafana</span>
+      <span class="skill-badge">Prometheus</span>
+    </div>
+  </section>
+</main>
+
+  <!-- Footer -->
+  <footer role="contentinfo" class="text-center py-3 mt-5">
+    &copy; 2025 Jordan Netkov
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
