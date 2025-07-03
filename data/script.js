@@ -60,16 +60,16 @@ const scrollElements = document.querySelectorAll(
   'section, #profile-image-container, .skill-badge, .nav-link'
 );
 
-// const observer = new IntersectionObserver((entries, observerRef) => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('visible');
-//       observerRef.unobserve(entry.target); // remove if you want animation only once
-//     }
-//   });
-// }, {
-//   threshold: 0.1,
-// });
+const observer = new IntersectionObserver((entries, observerRef) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observerRef.unobserve(entry.target); // remove if you want animation only once
+    }
+  });
+}, {
+  threshold: 0.1,
+});
 
-// scrollElements.forEach(el => observer.observe(el));
+scrollElements.forEach(el => observer.observe(el));
 
